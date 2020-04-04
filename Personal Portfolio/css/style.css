@@ -239,8 +239,6 @@ div[class^='bar-'] {
   position: absolute;
   background-color: #48CFAD;
   height: 10px;
-  width: 50%;
-  max-width: 99.5%;
   border-radius: 20px;
   margin: 2.7px;
 }
@@ -294,10 +292,49 @@ button.active {
   justify-self: center;
 }
 
-div.hide-category {
+div .hide-category {
   display: none;
 }
 
 .show-category {
   display: block;
+}
+
+.contact {
+  margin-top: 50px;
+}
+
+form input, form textarea {
+  display: block;
+  width: 650px;
+  padding: 20px;
+  background-color: #252627;
+  border: 3px solid #707070;
+  margin: 10px 0;
+  outline: none;
+  color: #FFF;
+  font-size: 1rem;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%);
+}
+
+form input:last-child {
+  width: 150px;
+  background-color: #ED5565;
+  border: none;
+  cursor: pointer;
+}
+
+footer hr {
+  border: 2px solid #707070;
+  margin-top: 80px;
+}
+
+footer p {
+  text-align: center;
+  color: #707070;
+  font-size: 1.2rem;
+  padding: 30px 0;
 }
