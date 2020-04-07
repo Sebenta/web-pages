@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Dark Mode UI Theme</title>
+    <script src="https://kit.fontawesome.com/718f86f283.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+
+        <div class="toggle-btn">
+            <i class="fas fa-adjust"></i>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <div class="content-image">
+                    <img src="./black-and-gold-face-paint-3695801.jpg" alt="" srcset="">
+                </div>
+                <div class="content-text">
+                    <div class="title">Awesome Title</div>
+                    <div class="subtitle">Lorem ipsum dolor sit amet</div>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nisi exercitationem animi
+                        deleniti,
+                        illo dolor quaerat laboriosam optio? Ea libero repellendus quasi eveniet ipsa adipisci maiores
+                        quidem sapiente aperiam deleniti?
+                    </p>
+                    <p class="paragraph">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat asperiores mollitia ipsa saepe
+                        iste magnam libero cum enim, in explicabo nisi omnis numquam autem ipsum rem aliquid doloremque
+                        voluptas praesentium.
+                    </p>
+                    <a href="#" class="cta">Learn more &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script>
+        let body = document.body;
+        let toggleBtn = document.querySelector('.toggle-btn');
+        let currentTheme = localStorage.getItem('currentTheme');
+
+        if (currentTheme) {
+            body.classList.add('dark-theme');
+        }
+
+        toggleBtn.addEventListener('click', function () {
+            body.classList.toggle('dark-theme');
+
+            if (body.classList.contains('dark-theme')) {
+                localStorage.setItem('currentTheme', 'themeAction');
+            } else {
+                localStorage.removeItem('currentTheme');
+            }
+        })
+    </script>
+</body>
+
+</html>
