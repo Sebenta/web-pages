@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <spam class="filter" />
+
+    <nav class="menu">
+
+        <h1 class="toggle-menu" id="toggle-menu">
+            &lt;Menu/&gt;
+        </h1>
+
+        <div class="menu-body animated bounceOut">
+            <p class="close-menu" id="close-menu">&lt; close /&gt;</p>
+            <ol>
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item"><a href="#">About</a></li>
+                <li class="menu-item"><a href="#">Galerry</a>
+                    <ol class="sub-menu">
+                        <li class="menu-item"><a href="#">Services</a></li>
+                        <li class="menu-item"><a href="#">Testimonials</a></li>
+                        <li class="menu-item"><a href="#">Carrier</a></li>
+                    </ol>
+                </li>
+                <li class="menu-item"><a href="#">Responsive</a>
+                    <ol class="sub-menu">
+                        <li class="menu-item"><a href="#">Display</a></li>
+                        <li class="menu-item"><a href="#">Supports</a></li>
+                        <li class="menu-item"><a href="#">Locations</a></li>
+                    </ol>
+                </li>
+                <li class="menu-item"><a href="#">Contact</a></li>
+
+            </ol>
+        </div>
+
+    </nav>
+
+    <script>
+        let toggleMenu = document.querySelector('#toggle-menu');
+        let menu = document.querySelector('.menu-body');
+        let closeMenu = document.querySelector('#close-menu');
+
+        let hide = 'bounceOut';
+        let show = 'swing'
+        toggleMenu.addEventListener('click', function () {
+            menu.classList.add("active");
+            if (menu.classList.contains(show)) {
+                menu.classList.replace(show, hide);
+            } else {
+                menu.classList.replace(hide, show);
+            }
+        })
+        closeMenu.addEventListener('click', function () {
+            menu.classList.replace(show, hide);
+        })
+
+    </script>
+</body>
+
+</html>
