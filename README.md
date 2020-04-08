@@ -3,5 +3,5 @@ Simple web pages for studying html, css and js
 
 ## Screenshots of projects
 
-### Personal Portfolio
-<img src="./screenshots/Personal Portfolio - about.png">
+### Loading Animation
+<img src="./screenshots/Loading Animation.png">
