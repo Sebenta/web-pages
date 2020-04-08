@@ -7,6 +7,6 @@ Simple web pages for studying html, css and js
 
 <div style="width:150px">
 
-![Personal Portfolio](https://github.com/Sebenta/web-pages/blob/master/screenshots/Personal%20Portfolio%20-%20hero.png,"sss")
+![Personal Portfolio](https://raw.githubusercontent.com/Sebenta/web-pages/master/screenshots/Personal%20Portfolio%20-%20about.png,"sss")
 
 </div>
