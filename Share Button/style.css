@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    background-image: url(./white-green-and-orange-wooden-plank-139321.jpg); /*Foto de FWStudio no Pexels*/
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.share {
+    position: relative;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+}
+
+.share span {
+    width: 200px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    transition: opactity 0.3s ease-in-out;
+    color: #2eac9f;
+    pointer-events: none;
+}
+
+.share nav {
+    font-size: 0;
+}
+
+.share a {
+    line-height: 80px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    background-color: #333333;
+    color: #333;
+    overflow: hidden;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    margin: 0 -20px;
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.share a:first-child {
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    margin: 0;
+}
+
+.share a:last-child {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin: 0;
+}
+
+.share a:first-child:hover {
+    background-color: #71c5ec;
+}
+
+.share a:nth-child(2):hover {
+    background-color: #3b5998;
+}
+
+.share a:nth-child(3):hover {
+    background-color: #ea4335;
+}
+
+.share a:last-child:hover {
+    background-color: #ea4;
+}
+
+.share:hover span, .share .hover span {
+    opacity: 0;
+}
+
+.share:hover a, .share .hover a {
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #2eac9f;
+    font-size: 28px;
+}
+
+.share:hover a:hove, .share .hover a:hover {
+    color: #fff;
+}

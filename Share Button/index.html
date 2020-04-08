@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Button</title>
+    <script src="https://kit.fontawesome.com/718f86f283.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="share">
+        <span>share</span>
+        <nav>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </nav>
+    </div>
+
+    <script>
+        "use strict"
+        let share = document.querySelector('.share');
+
+        setTimeout(function () {
+            share.classList.add("hover");
+        }, 1000);
+
+        setTimeout(function () {
+            share.classList.remove("hover");
+        }, 3000);
+
+    </script>
+</body>
+
+</html>
