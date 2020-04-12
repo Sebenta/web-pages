@@ -30,3 +30,8 @@ Simple web pages for studying html, css and js
 
 ![Share Button](https://raw.githubusercontent.com/Sebenta/web-pages/master/screenshots/Share%20Button.png)
 ![Share Button - hover](https://raw.githubusercontent.com/Sebenta/web-pages/master/screenshots/Share%20Button%20-%20hover.png)
+
+## Analog Clock
+> Adapted from: [Youtube: Online Tutorials](https://www.youtube.com/watch?v=weZFfrjF-k4)
+
+![Analog Clock](./screenshots/Analog%20Clock.png)
