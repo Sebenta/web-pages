@@ -35,3 +35,8 @@ Simple web pages for studying html, css and js
 > Adapted from: [Youtube: Online Tutorials](https://www.youtube.com/watch?v=weZFfrjF-k4)
 
 ![Analog Clock](./screenshots/Analog%20Clock.png)
+
+## CSS Tricks Cards
+> Adapted from: [Youtube: Fireship](https://www.youtube.com/watch?v=29deL9MFfWc)
+
+![CSS Tricks Cards](./screenshots/CSS%20Tricks%20Cards%20s.png)
